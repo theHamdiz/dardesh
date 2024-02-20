@@ -1,0 +1,11 @@
+[package]
+name = "entity"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+serde = {version = "1.0.197", features = ["derive"]}
+serde_json = {version = "1.0.114", features = ["default"]}
+sea-orm = {version = "1.0.0-rc.1", features = ["serde_json", "sqlx-sqlite", "runtime-tokio", "with-chrono", "with-json"]}
+uuid = "1.7.0"
+base64 = "0.21.7"
